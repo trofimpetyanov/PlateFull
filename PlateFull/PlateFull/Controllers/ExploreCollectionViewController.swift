@@ -39,6 +39,8 @@ class ExploreCollectionViewController: UICollectionViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         updateSnapshot()
     }
     
@@ -185,15 +187,11 @@ class ExploreCollectionViewController: UICollectionViewController {
     
     //MARK: – Delegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("ok")
         performSegue(withIdentifier: "showDetailRestaurant", sender: nil)
-        print("ok")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let detailRestaurantViewController = segue.destination as? DetailRestaurantViewController, let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first, let restaurant = dataSource.itemIdentifier(for: selectedIndexPath) else { return }
-        
-        print("ok")
         
         detailRestaurantViewController.restaurant = restaurant
     }

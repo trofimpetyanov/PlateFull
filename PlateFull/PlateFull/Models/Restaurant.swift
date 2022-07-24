@@ -22,6 +22,9 @@ struct Restaurant {
     let isCitizensPick: Bool
     
     let menuLink: String
+    
+    let latitude: Double
+    let longitude: Double
 }
 
 extension Restaurant: Codable { }

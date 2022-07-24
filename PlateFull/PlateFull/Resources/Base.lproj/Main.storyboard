@@ -417,7 +417,7 @@
                     <navigationItem key="navigationItem" title="Search" id="6UL-LS-T2f">
                         <barButtonItem key="leftBarButtonItem" image="map" catalog="system" id="eD5-5r-sl5">
                             <connections>
-                                <segue destination="aPv-GQ-jZR" kind="show" id="P6O-8v-3P0"/>
+                                <segue destination="aPv-GQ-jZR" kind="show" destinationCreationSelector="showMap:sender:" id="P6O-8v-3P0"/>
                             </connections>
                         </barButtonItem>
                         <rightBarButtonItems>
@@ -625,7 +625,7 @@
                                                 <rect key="frame" x="257.5" y="0.0" width="124.5" height="46"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" image="map" catalog="system" title="Route" subtitle="In Development" imagePadding="8" cornerStyle="medium">
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="8"/>
+                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="7"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -955,7 +955,7 @@
             </objects>
             <point key="canvasLocation" x="1792.753623188406" y="924.77678571428567"/>
         </scene>
-        <!--Map View View Controller-->
+        <!--Map-->
         <scene sceneID="XIh-PE-HPc">
             <objects>
                 <viewController id="aPv-GQ-jZR" customClass="MapViewViewController" customModule="PlateFull" customModuleProvider="target" sceneMemberID="viewController">
@@ -964,26 +964,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdM-QP-63j">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XqO-4E-QHM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vdM-QP-63j" firstAttribute="top" secondItem="pGy-L2-0Ab" secondAttribute="top" id="AYT-Fx-yQi"/>
-                            <constraint firstAttribute="bottom" secondItem="vdM-QP-63j" secondAttribute="bottom" id="NRF-g6-NAW"/>
-                            <constraint firstItem="XqO-4E-QHM" firstAttribute="trailing" secondItem="vdM-QP-63j" secondAttribute="trailing" id="Rae-vv-jYk"/>
-                            <constraint firstItem="vdM-QP-63j" firstAttribute="leading" secondItem="XqO-4E-QHM" secondAttribute="leading" id="SBw-C1-864"/>
+                            <constraint firstItem="vdM-QP-63j" firstAttribute="leading" secondItem="XqO-4E-QHM" secondAttribute="leading" id="O0Z-gF-jc1"/>
+                            <constraint firstItem="XqO-4E-QHM" firstAttribute="bottom" secondItem="vdM-QP-63j" secondAttribute="bottom" id="Uc6-8Q-2Bq"/>
+                            <constraint firstItem="XqO-4E-QHM" firstAttribute="trailing" secondItem="vdM-QP-63j" secondAttribute="trailing" id="jlC-vB-XtA"/>
+                            <constraint firstItem="vdM-QP-63j" firstAttribute="top" secondItem="XqO-4E-QHM" secondAttribute="top" id="vOH-S7-chp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="DMC-DF-qyR"/>
+                    <navigationItem key="navigationItem" title="Map" largeTitleDisplayMode="never" id="DMC-DF-qyR"/>
                     <connections>
                         <outlet property="mapView" destination="vdM-QP-63j" id="xrU-xx-PDA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuG-fy-cnL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="1654.6875"/>
+            <point key="canvasLocation" x="1792.753623188406" y="1653.3482142857142"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="qxI-WO-08M">

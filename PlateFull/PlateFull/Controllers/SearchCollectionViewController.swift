@@ -71,6 +71,10 @@ class SearchCollectionViewController: UICollectionViewController {
         updateSnapshot()
     }
     
+    @IBSegueAction func showMap(_ coder: NSCoder, sender: Any?) -> MapViewViewController? {
+        return MapViewViewController(coder: coder, restaurants: filteredRestaurants)
+    }
+    
     //MARK: – Data Source
     private func createDataSource() -> DataSourceType {
         let dataSource = DataSourceType(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in

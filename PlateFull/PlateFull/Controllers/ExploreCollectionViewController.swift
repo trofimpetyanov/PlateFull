@@ -7,8 +7,6 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class ExploreCollectionViewController: UICollectionViewController {
     typealias DataSourceType = UICollectionViewDiffableDataSource<ViewModel.Section, ViewModel.Item>
     
@@ -44,6 +42,7 @@ class ExploreCollectionViewController: UICollectionViewController {
         updateSnapshot()
     }
     
+    //MARK: – Helpers
     private func setup() {
         dataSource = createDataSource()
         collectionView.dataSource = dataSource
@@ -52,6 +51,7 @@ class ExploreCollectionViewController: UICollectionViewController {
         collectionView.register(SectionHeaderCollectionReusableView.self, forSupplementaryViewOfKind: SupplementaryViewKind.sectionHeader, withReuseIdentifier: SectionHeaderCollectionReusableView.reuseIdentifier)
     }
     
+    //MARK: – Updates
     private func updateSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<ViewModel.Section, ViewModel.Item>()
         
@@ -181,6 +181,21 @@ class ExploreCollectionViewController: UICollectionViewController {
         }
         
         return layout
+    }
+    
+    //MARK: – Delegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("ok")
+        performSegue(withIdentifier: "showDetailRestaurant", sender: nil)
+        print("ok")
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailRestaurantViewController = segue.destination as? DetailRestaurantViewController, let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first, let restaurant = dataSource.itemIdentifier(for: selectedIndexPath) else { return }
+        
+        print("ok")
+        
+        detailRestaurantViewController.restaurant = restaurant
     }
 }
 

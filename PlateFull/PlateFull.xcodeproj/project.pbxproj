@@ -19,11 +19,13 @@
 		8142B2FF288D41B700C1DFBC /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B2FE288D41B700C1DFBC /* Price.swift */; };
 		8142B301288D423F00C1DFBC /* DietaryRestrictionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */; };
 		8142B303288D49EF00C1DFBC /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B302288D49EF00C1DFBC /* DataManager.swift */; };
-		8142B305288D6AF900C1DFBC /* DietoryRestrictionOptionsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B304288D6AF900C1DFBC /* DietoryRestrictionOptionsCollectionView.swift */; };
-		8142B307288D6B5900C1DFBC /* SmallImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B306288D6B5900C1DFBC /* SmallImageCollectionViewCell.swift */; };
 		8142B309288D70BC00C1DFBC /* UIView+Blur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B308288D70BC00C1DFBC /* UIView+Blur.swift */; };
 		8142B30B288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */; };
 		81F06225288D76AC00D18961 /* DietaryRestrictionOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */; };
+		81F0622D288D838D00D18961 /* DetailRestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0622C288D838D00D18961 /* DetailRestaurantViewController.swift */; };
+		81F0622F288D859E00D18961 /* EmojiLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0622E288D859E00D18961 /* EmojiLabelCollectionViewCell.swift */; };
+		81F06231288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06230288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift */; };
+		81F06233288D9CFA00D18961 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06232288D9CFA00D18961 /* SearchCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,11 +43,13 @@
 		8142B2FE288D41B700C1DFBC /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictionOptions.swift; sourceTree = "<group>"; };
 		8142B302288D49EF00C1DFBC /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		8142B304288D6AF900C1DFBC /* DietoryRestrictionOptionsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietoryRestrictionOptionsCollectionView.swift; sourceTree = "<group>"; };
-		8142B306288D6B5900C1DFBC /* SmallImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		8142B308288D70BC00C1DFBC /* UIView+Blur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Blur.swift"; sourceTree = "<group>"; };
 		8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietaryRestrictionOption.swift; sourceTree = "<group>"; };
+		81F0622C288D838D00D18961 /* DetailRestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRestaurantViewController.swift; sourceTree = "<group>"; };
+		81F0622E288D859E00D18961 /* EmojiLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiLabelCollectionViewCell.swift; sourceTree = "<group>"; };
+		81F06230288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Stylize.swift"; sourceTree = "<group>"; };
+		81F06232288D9CFA00D18961 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,26 +82,76 @@
 		8142B2E1288D336000C1DFBC /* PlateFull */ = {
 			isa = PBXGroup;
 			children = (
-				8142B2E2288D336000C1DFBC /* AppDelegate.swift */,
-				8142B2E4288D336000C1DFBC /* SceneDelegate.swift */,
-				8142B2E8288D336000C1DFBC /* Main.storyboard */,
-				8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */,
-				8142B304288D6AF900C1DFBC /* DietoryRestrictionOptionsCollectionView.swift */,
-				8142B306288D6B5900C1DFBC /* SmallImageCollectionViewCell.swift */,
-				8142B2FA288D40B700C1DFBC /* ExploreCollectionViewController.swift */,
-				8142B302288D49EF00C1DFBC /* DataManager.swift */,
-				8142B2FC288D413D00C1DFBC /* Restaurant.swift */,
-				8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */,
-				81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */,
-				8142B2FE288D41B700C1DFBC /* Price.swift */,
-				8142B2F6288D400000C1DFBC /* WideCollectionViewCell.swift */,
-				8142B308288D70BC00C1DFBC /* UIView+Blur.swift */,
-				8142B2F8288D402A00C1DFBC /* SmallCollectionViewCell.swift */,
-				8142B2EB288D336300C1DFBC /* Assets.xcassets */,
-				8142B2ED288D336300C1DFBC /* LaunchScreen.storyboard */,
+				81F06226288D7E6C00D18961 /* Model */,
+				81F06227288D7E7700D18961 /* Views */,
+				81F06228288D7E7C00D18961 /* Controllers */,
+				81F06229288D7E8200D18961 /* Extensions */,
+				81F0622B288D7EC300D18961 /* Service */,
+				81F0622A288D7EA700D18961 /* Resources */,
 				8142B2F0288D336300C1DFBC /* Info.plist */,
 			);
 			path = PlateFull;
+			sourceTree = "<group>";
+		};
+		81F06226288D7E6C00D18961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8142B2FC288D413D00C1DFBC /* Restaurant.swift */,
+				8142B2FE288D41B700C1DFBC /* Price.swift */,
+				81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */,
+				8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		81F06227288D7E7700D18961 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */,
+				8142B2F8288D402A00C1DFBC /* SmallCollectionViewCell.swift */,
+				8142B2F6288D400000C1DFBC /* WideCollectionViewCell.swift */,
+				81F0622E288D859E00D18961 /* EmojiLabelCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81F06228288D7E7C00D18961 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8142B2FA288D40B700C1DFBC /* ExploreCollectionViewController.swift */,
+				81F0622C288D838D00D18961 /* DetailRestaurantViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		81F06229288D7E8200D18961 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8142B308288D70BC00C1DFBC /* UIView+Blur.swift */,
+				81F06230288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		81F0622A288D7EA700D18961 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8142B2EB288D336300C1DFBC /* Assets.xcassets */,
+				8142B2E2288D336000C1DFBC /* AppDelegate.swift */,
+				8142B2E4288D336000C1DFBC /* SceneDelegate.swift */,
+				8142B2ED288D336300C1DFBC /* LaunchScreen.storyboard */,
+				8142B2E8288D336000C1DFBC /* Main.storyboard */,
+				81F06232288D9CFA00D18961 /* SearchCollectionViewController.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		81F0622B288D7EC300D18961 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8142B302288D49EF00C1DFBC /* DataManager.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,16 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F06233288D9CFA00D18961 /* SearchCollectionViewController.swift in Sources */,
 				8142B2F9288D402A00C1DFBC /* SmallCollectionViewCell.swift in Sources */,
 				8142B2FF288D41B700C1DFBC /* Price.swift in Sources */,
+				81F06231288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift in Sources */,
 				8142B2E3288D336000C1DFBC /* AppDelegate.swift in Sources */,
 				8142B301288D423F00C1DFBC /* DietaryRestrictionOptions.swift in Sources */,
 				8142B2FD288D413D00C1DFBC /* Restaurant.swift in Sources */,
-				8142B305288D6AF900C1DFBC /* DietoryRestrictionOptionsCollectionView.swift in Sources */,
 				8142B2FB288D40B700C1DFBC /* ExploreCollectionViewController.swift in Sources */,
+				81F0622D288D838D00D18961 /* DetailRestaurantViewController.swift in Sources */,
+				81F0622F288D859E00D18961 /* EmojiLabelCollectionViewCell.swift in Sources */,
 				8142B2E5288D336000C1DFBC /* SceneDelegate.swift in Sources */,
 				81F06225288D76AC00D18961 /* DietaryRestrictionOption.swift in Sources */,
-				8142B307288D6B5900C1DFBC /* SmallImageCollectionViewCell.swift in Sources */,
 				8142B309288D70BC00C1DFBC /* UIView+Blur.swift in Sources */,
 				8142B30B288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift in Sources */,
 				8142B303288D49EF00C1DFBC /* DataManager.swift in Sources */,

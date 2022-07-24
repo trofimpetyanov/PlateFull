@@ -24,16 +24,7 @@ class WideCollectionViewCell: UICollectionViewCell {
     @IBOutlet var priceLabel: UILabel!
     
     private func setup() {
-        contentView.layer.cornerRadius = 12
-        contentView.layer.masksToBounds = true
-
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 2)
-        layer.shadowRadius = 8.0
-        layer.shadowOpacity = 0.12
-        layer.masksToBounds = false
-        layer.cornerRadius = 16
-        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath
+        stylize()
         
         imageView.layer.cornerRadius = 8
         ratingView.layer.cornerRadius = ratingView.frame.size.height / 2

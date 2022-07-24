@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DietaryRestrictionOption {
+struct DietaryRestrictionOption: Codable {
     let name: String
     let emoji: String
 }

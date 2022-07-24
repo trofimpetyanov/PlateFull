@@ -1,19 +1,19 @@
 //
-//  SearchCollectionViewController.swift
+//  FavoritesCollectionViewController.swift
 //  PlateFull
 //
-//  Created by Trofim Petyanov on 24.07.2022.
+//  Created by Trofim Petyanov on 25.07.2022.
 //
 
 import UIKit
 
-class SearchCollectionViewController: UICollectionViewController {
+class FavoritesCollectionViewController: UICollectionViewController {
     typealias DataSourceType = UICollectionViewDiffableDataSource<ViewModel.Section, ViewModel.Item>
     
     // MARK: – View Model
     enum ViewModel {
         enum Section: Hashable {
-            case restaurants
+            case favoriteRestaurants
         }
         
         typealias Item = Restaurant
@@ -21,11 +21,6 @@ class SearchCollectionViewController: UICollectionViewController {
     
     //MARK: – Properties
     var dataSource: DataSourceType!
-    
-    var restaurants = DataManager.shared.restaurants
-    var filteredRestaurants = DataManager.shared.restaurants
-    
-    let searchController = UISearchController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,31 +39,17 @@ class SearchCollectionViewController: UICollectionViewController {
         dataSource = createDataSource()
         collectionView.dataSource = dataSource
         collectionView.collectionViewLayout = createLayout()
-        
-        navigationItem.searchController = searchController
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchResultsUpdater = self
-        navigationItem.hidesSearchBarWhenScrolling = true
     }
     
-    //MARK: – Updates
     private func updateSnapshot() {
         var snapshot = NSDiffableDataSourceSnapshot<ViewModel.Section, ViewModel.Item>()
         
-        snapshot.appendSections([.restaurants])
-        snapshot.appendItems(filteredRestaurants, toSection: .restaurants)
+        let favoriteRestaurants = DataManager.shared.favoriteRestaurants
+        
+        snapshot.appendSections([.favoriteRestaurants])
+        snapshot.appendItems(favoriteRestaurants, toSection: .favoriteRestaurants)
         
         dataSource.apply(snapshot)
-    }
-    
-    //MARK: – Actions
-    @IBAction func filtersButtonTapped(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "showFilters", sender: nil)
-    }
-    
-    @IBAction func reloadButtonTapped(_ sender: UIBarButtonItem) {
-        filteredRestaurants = restaurants
-        updateSnapshot()
     }
     
     //MARK: – Data Source
@@ -115,52 +96,5 @@ class SearchCollectionViewController: UICollectionViewController {
         guard let detailRestaurantViewController = segue.destination as? DetailRestaurantViewController, let selectedIndexPath = collectionView.indexPathsForSelectedItems?.first, let restaurant = dataSource.itemIdentifier(for: selectedIndexPath) else { return }
         
         detailRestaurantViewController.restaurant = restaurant
-    }
-}
-
-extension SearchCollectionViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchString = searchController.searchBar.text, !searchString.isEmpty {
-            filteredRestaurants = restaurants.filter { $0.name.localizedCaseInsensitiveContains(searchString)}
-        } else {
-            filteredRestaurants = restaurants
-        }
-        
-        updateSnapshot()
-    }
-    
-    @IBAction func unwindFromFiltersCollectionViewController(segue: UIStoryboardSegue) {
-        if segue.identifier == "applyUnwind", let filtersCollectionViewController = segue.source as? FiltersCollectionViewController {
-        
-        let filters = filtersCollectionViewController.filters
-        filteredRestaurants = restaurants
-        
-        if !filters.dietaryRestrictions.isEmpty {
-            filteredRestaurants = filteredRestaurants.filter { restaurant in
-                var isCandidate = true
-                
-                for dietaryRestriction in filters.dietaryRestrictions {
-                    if !restaurant.dietaryRestrictions.contains(dietaryRestriction) {
-                        isCandidate = false
-                    }
-                }
-                
-                return isCandidate
-            }
-        }
-        
-        if !filters.prices.isEmpty {
-            filteredRestaurants = filteredRestaurants.filter { filters.prices.contains($0.price) }
-        }
-        
-        if !filters.cuisines.isEmpty {
-            filteredRestaurants = filteredRestaurants.filter { filters.cuisines.contains($0.cuisine) }
-        }
-        
-        updateSnapshot()
-        } else if segue.identifier == "clearUnwind" {
-            filteredRestaurants = restaurants
-            updateSnapshot()
-        }
     }
 }

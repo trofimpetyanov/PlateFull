@@ -31,6 +31,8 @@
 		81F06239288DCAD700D18961 /* Cuisine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06238288DCAD700D18961 /* Cuisine.swift */; };
 		81F0623D288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0623C288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift */; };
 		81F0623F288DDFB200D18961 /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F0623E288DDFB200D18961 /* FilterCollectionViewCell.swift */; };
+		81F06241288E000400D18961 /* FavoritesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06240288E000400D18961 /* FavoritesCollectionViewController.swift */; };
+		81F06243288E0ACD00D18961 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F06242288E0ACD00D18961 /* MapViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,8 @@
 		81F06238288DCAD700D18961 /* Cuisine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cuisine.swift; sourceTree = "<group>"; };
 		81F0623C288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondarySectionHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		81F0623E288DDFB200D18961 /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		81F06240288E000400D18961 /* FavoritesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewController.swift; sourceTree = "<group>"; };
+		81F06242288E0ACD00D18961 /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				8142B2FA288D40B700C1DFBC /* ExploreCollectionViewController.swift */,
 				81F0622C288D838D00D18961 /* DetailRestaurantViewController.swift */,
 				81F06232288D9CFA00D18961 /* SearchCollectionViewController.swift */,
+				81F06240288E000400D18961 /* FavoritesCollectionViewController.swift */,
+				81F06242288E0ACD00D18961 /* MapViewViewController.swift */,
 				81F06234288DC8B600D18961 /* FiltersCollectionViewController.swift */,
 			);
 			path = Controllers;
@@ -252,11 +258,13 @@
 				8142B2FB288D40B700C1DFBC /* ExploreCollectionViewController.swift in Sources */,
 				81F0622D288D838D00D18961 /* DetailRestaurantViewController.swift in Sources */,
 				81F0622F288D859E00D18961 /* EmojiLabelCollectionViewCell.swift in Sources */,
+				81F06241288E000400D18961 /* FavoritesCollectionViewController.swift in Sources */,
 				8142B2E5288D336000C1DFBC /* SceneDelegate.swift in Sources */,
 				81F06225288D76AC00D18961 /* DietaryRestrictionOption.swift in Sources */,
 				81F06235288DC8B600D18961 /* FiltersCollectionViewController.swift in Sources */,
 				8142B309288D70BC00C1DFBC /* UIView+Blur.swift in Sources */,
 				8142B30B288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift in Sources */,
+				81F06243288E0ACD00D18961 /* MapViewViewController.swift in Sources */,
 				81F06237288DCA0000D18961 /* Filters.swift in Sources */,
 				8142B303288D49EF00C1DFBC /* DataManager.swift in Sources */,
 				8142B2F7288D400000C1DFBC /* WideCollectionViewCell.swift in Sources */,

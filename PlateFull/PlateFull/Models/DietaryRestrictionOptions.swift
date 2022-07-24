@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DietaryRestrictionOptions: CaseIterable {
+enum DietaryRestrictionOptions: CaseIterable, Codable {
     case lactoseFree
     case glutenFree
     case vegetarian
@@ -31,7 +31,7 @@ extension DietaryRestrictionOptions: RawRepresentable {
         case .vegan:
             return DietaryRestrictionOption(name: "Vegan", emoji: "🌱")
         case .kosher:
-            return DietaryRestrictionOption(name: "Kosher", emoji: "🍜")
+            return DietaryRestrictionOption(name: "Kosher", emoji: "🍚")
         }
     }
 }

@@ -16,8 +16,6 @@ class ExploreCollectionViewController: UICollectionViewController {
             case newlyAdded
             case mostPopular
             case localsChoice
-            case favorites
-            case recentlyVisited
         }
         
         typealias Item = Restaurant
@@ -60,25 +58,13 @@ class ExploreCollectionViewController: UICollectionViewController {
         let newlyAdded = restaurants.filter { $0.isLastAdded }
         let mostPopular = restaurants.filter { $0.isPopular }
         let localsChoice = restaurants.filter { $0.isCitizensPick }
-        let favorites = restaurants.filter { $0.isFavorite }
-        let recentlyVisited = restaurants.filter { $0.isVisited}
         
         snapshot.appendSections([.newlyAdded, .mostPopular, .localsChoice])
         snapshot.appendItems(newlyAdded, toSection: .newlyAdded)
         snapshot.appendItems(mostPopular, toSection: .mostPopular)
         snapshot.appendItems(localsChoice, toSection: .localsChoice)
         
-        if !favorites.isEmpty {
-            snapshot.appendSections([.favorites])
-            snapshot.appendItems(favorites, toSection: .favorites)
-        }
-        
-        if !recentlyVisited.isEmpty {
-            snapshot.appendSections([.recentlyVisited])
-            snapshot.appendItems(recentlyVisited, toSection: .recentlyVisited)
-        }
-        
-        dataSource.apply(snapshot)
+        dataSource.applySnapshotUsingReloadData(snapshot)
     }
     
     // MARK: – Data Source
@@ -93,7 +79,7 @@ class ExploreCollectionViewController: UICollectionViewController {
                 cell.configureCell(with: itemIdentifier)
                 
                 return cell
-            case .localsChoice, .mostPopular, .favorites, .recentlyVisited:
+            case .localsChoice, .mostPopular:
                 guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCollectionViewCell.cellId, for: indexPath) as? SmallCollectionViewCell else { return UICollectionViewCell() }
                 
                 cell.configureCell(with: itemIdentifier)
@@ -117,10 +103,6 @@ class ExploreCollectionViewController: UICollectionViewController {
                     sectionName = "Most Popular"
                 case .localsChoice:
                     sectionName = "Locals Choice"
-                case .favorites:
-                    sectionName = "Favorites"
-                case .recentlyVisited:
-                    sectionName = "Recently Visited"
                 }
                 
                 headerView.setTitle(sectionName)

@@ -9,25 +9,25 @@ import Foundation
 
 struct DataManager {
     //MARK: – Shared
-    static let shared = DataManager()
+    static var shared = DataManager()
     private let defaults = UserDefaults.standard
     
     //MARK: – Data
     var restaurants = [
-        Restaurant(name: "Churchill", imageName: "churchill", cuisine: .european, price: .midRange, rating: 4.5, dietaryRestrictions: [.vegetarian, .lactoseFree, .glutenFree], isLastAdded: true, isPopular: false, isCitizensPick: false),
-        Restaurant(name: "Benjamin Cafe", imageName: "benjaminCafe", cuisine: .indian, price: .midRange, rating: 4.5, dietaryRestrictions: [.vegan, .vegetarian, .kosher], isLastAdded: true, isPopular: false, isCitizensPick: false),
-        Restaurant(name: "Perchini", imageName: "perchini", cuisine: .italian, price: .midRange, rating: 4.7, dietaryRestrictions: [.vegan, .vegetarian, .lactoseFree], isLastAdded: false, isPopular: true, isCitizensPick: false),
-        Restaurant(name: "Livingstone", imageName: "livingstone", cuisine: .mixed, price: .expensive, rating: 4.3, dietaryRestrictions: [.glutenFree, .lactoseFree], isLastAdded: false, isPopular: true, isCitizensPick: false),
-        Restaurant(name: "Iscra", imageName: "iscra", cuisine: .italian, price: .midRange, rating: 4.9, dietaryRestrictions: [.vegan, .vegetarian], isLastAdded: false, isPopular: false, isCitizensPick: true),
-        Restaurant(name: "Tanuki", imageName: "tanuki", cuisine: .panAsian, price: .expensive, rating: 4.3, dietaryRestrictions: [.vegan, .vegetarian, .lactoseFree, .glutenFree], isLastAdded: false, isPopular: false, isCitizensPick: true),
-        Restaurant(name: "Surf Coffee", imageName: "surfCoffee", cuisine: .european, price: .cheap, rating: 4.7, dietaryRestrictions: [.vegan, .glutenFree, .lactoseFree], isLastAdded: true, isPopular: false, isCitizensPick: false),
-        Restaurant(name: "Coffee Cake", imageName: "coffeeCake", cuisine: .mixed, price: .cheap, rating: 4.8, dietaryRestrictions: [.lactoseFree, .glutenFree], isLastAdded: false, isPopular: true, isCitizensPick: false),
-        Restaurant(name: "Comod", imageName: "comod", cuisine: .mixed, price: .cheap, rating: 5.0, dietaryRestrictions: [.glutenFree, .lactoseFree, .vegan, .vegetarian], isLastAdded: false, isPopular: false, isCitizensPick: true)
+        Restaurant(name: "Churchill", imageName: "churchill", cuisine: .european, price: .midRange, rating: 4.5, dietaryRestrictions: [.vegetarian, .lactoseFree, .glutenFree], isLastAdded: true, isPopular: false, isCitizensPick: false, menuLink: "https://churchill.perfecto-group.ru/wp-content/uploads/2022/06/churchill-menu-06-2022.pdf"),
+        Restaurant(name: "Benjamin Cafe", imageName: "benjaminCafe", cuisine: .indian, price: .midRange, rating: 4.5, dietaryRestrictions: [.vegan, .vegetarian, .kosher], isLastAdded: true, isPopular: false, isCitizensPick: false, menuLink: "https://milimon.ru/benjamincafe/"),
+        Restaurant(name: "Perchini", imageName: "perchini", cuisine: .italian, price: .midRange, rating: 4.7, dietaryRestrictions: [.vegan, .vegetarian, .lactoseFree], isLastAdded: false, isPopular: true, isCitizensPick: false, menuLink: "https://menu.perchini.ru"),
+        Restaurant(name: "Livingstone", imageName: "livingstone", cuisine: .mixed, price: .expensive, rating: 4.3, dietaryRestrictions: [.glutenFree, .lactoseFree], isLastAdded: false, isPopular: true, isCitizensPick: false, menuLink: "https://milimon.ru/livingstone/"),
+        Restaurant(name: "Iscra", imageName: "iscra", cuisine: .italian, price: .midRange, rating: 4.9, dietaryRestrictions: [.vegan, .vegetarian], isLastAdded: false, isPopular: false, isCitizensPick: true, menuLink: "https://iskra-cafe.vsite.biz"),
+        Restaurant(name: "Tanuki", imageName: "tanuki", cuisine: .panAsian, price: .expensive, rating: 4.3, dietaryRestrictions: [.vegan, .vegetarian, .lactoseFree, .glutenFree], isLastAdded: false, isPopular: false, isCitizensPick: true, menuLink: "https://tanukifamily.ru/tanuki/samara/top/"),
+        Restaurant(name: "Surf Coffee", imageName: "surfCoffee", cuisine: .european, price: .cheap, rating: 4.7, dietaryRestrictions: [.vegan, .glutenFree, .lactoseFree], isLastAdded: true, isPopular: false, isCitizensPick: false, menuLink: "https://eda.yandex.ru/samara/r/surf_coffee"),
+        Restaurant(name: "Coffee Cake", imageName: "coffeeCake", cuisine: .mixed, price: .cheap, rating: 4.8, dietaryRestrictions: [.lactoseFree, .glutenFree], isLastAdded: false, isPopular: true, isCitizensPick: false, menuLink: "https://coffee-cake.net/samara#rec80393185"),
+        Restaurant(name: "Comod", imageName: "comod", cuisine: .mixed, price: .cheap, rating: 5.0, dietaryRestrictions: [.glutenFree, .lactoseFree, .vegan, .vegetarian], isLastAdded: false, isPopular: false, isCitizensPick: true, menuLink: "https://komod-samara.vsite.biz")
     ]
     
     var favoriteRestaurants: [Restaurant] {
         get {
-            return unarchiveJSON(key: Setting.favoriteItems) ?? []
+            return unarchiveJSON(key: "favoriteItems") ?? []
         } set {
             archiveJSON(value: newValue, key: "favoriteItems")
         }

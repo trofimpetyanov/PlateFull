@@ -21,9 +21,10 @@ struct Restaurant {
     let isPopular: Bool
     let isCitizensPick: Bool
     
-    var isFavorite: Bool = false
-    var isVisited: Bool = false
+    let menuLink: String
 }
+
+extension Restaurant: Codable { }
 
 extension Restaurant: Hashable {
     static func == (lhs: Restaurant, rhs: Restaurant) -> Bool {

@@ -22,6 +22,8 @@ class SmallCollectionViewCell: UICollectionViewCell {
     @IBOutlet var cuisineLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     
+    var restaurant: Restaurant?
+    
     private func setup() {
         stylize()
         
@@ -29,15 +31,40 @@ class SmallCollectionViewCell: UICollectionViewCell {
         ratingView.layer.cornerRadius = ratingView.frame.size.height / 2
     }
     
+    func updateFavoriteButton(with restaurant: Restaurant) {
+        isFavoriteButton.setImage(UIImage(systemName: DataManager.shared.favoriteRestaurants.contains(restaurant) ? "heart.fill" : "heart"), for: .normal)
+    }
+    
     func configureCell(with restaurant: Restaurant) {
         setup()
+        self.restaurant = restaurant
         
         ratingLabel.text = "\(restaurant.rating)"
-        isFavoriteButton.setImage(UIImage(systemName: restaurant.isFavorite ? "heart.fill" : "heart"), for: .normal)
+        updateFavoriteButton(with: restaurant)
         imageView.image = UIImage(named: restaurant.imageName)
         nameLabel.text = restaurant.name
         dietaryRestrictionOptionsLabel.text = restaurant.dietaryRestrictions.sorted().reduce("") {$0 + $1.rawValue.emoji }
         cuisineLabel.text = restaurant.cuisine.rawValue
         priceLabel.text = restaurant.price.rawValue
+    }
+    
+    @IBAction func favoriteButtonTapped(_ sender: UIButton) {
+        guard let restaurant = restaurant else { return }
+        
+        if DataManager.shared.favoriteRestaurants.contains(restaurant), let firstIndex = DataManager.shared.favoriteRestaurants.firstIndex(of: restaurant) {
+            var favoriteRestaurants = DataManager.shared.favoriteRestaurants
+            
+            favoriteRestaurants.remove(at: firstIndex)
+            
+            DataManager.shared.favoriteRestaurants = favoriteRestaurants
+        } else {
+            var favoriteRestaurants = DataManager.shared.favoriteRestaurants
+            
+            favoriteRestaurants.insert(restaurant, at: 0)
+            
+            DataManager.shared.favoriteRestaurants = favoriteRestaurants
+        }
+        
+        updateFavoriteButton(with: restaurant)
     }
 }

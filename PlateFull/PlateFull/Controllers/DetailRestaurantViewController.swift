@@ -20,13 +20,16 @@ class DetailRestaurantViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    //MARK: – Properties
     var restaurant: Restaurant?
     
+    //MARK: – Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
     
+    //MARK: – Helpers
     private func setupUI() {
         detailView.layer.cornerRadius = 32
         detailView.layer.shadowColor = UIColor.black.cgColor
@@ -44,6 +47,7 @@ class DetailRestaurantViewController: UIViewController {
         
         if let restaurant = restaurant {
             title = restaurant.name
+            favoriteButton.image = UIImage(systemName: DataManager.shared.favoriteRestaurants.contains(restaurant) ? "heart.fill" : "heart")
             imageView.image = UIImage(named: restaurant.imageName)
             restaurantNameLabel.text = restaurant.name
             cuisineTypeLabel.text = restaurant.cuisine.rawValue
@@ -54,6 +58,34 @@ class DetailRestaurantViewController: UIViewController {
         collectionView.collectionViewLayout = createLayout()
     }
     
+    //MARK: – Actions
+    @IBAction func favoriteButtonTapped(_ sender: UIBarButtonItem) {
+        guard let restaurant = restaurant else { return }
+        
+        if DataManager.shared.favoriteRestaurants.contains(restaurant), let firstIndex = DataManager.shared.favoriteRestaurants.firstIndex(of: restaurant) {
+            var favoriteRestaurants = DataManager.shared.favoriteRestaurants
+            
+            favoriteRestaurants.remove(at: firstIndex)
+            
+            DataManager.shared.favoriteRestaurants = favoriteRestaurants
+            favoriteButton.image = UIImage(systemName: "heart")
+        } else {
+            var favoriteRestaurants = DataManager.shared.favoriteRestaurants
+            
+            favoriteRestaurants.insert(restaurant, at: 0)
+            
+            DataManager.shared.favoriteRestaurants = favoriteRestaurants
+            favoriteButton.image = UIImage(systemName: "heart.fill")
+        }
+    }
+    
+    @IBAction func viewMenuButtonTapped(_ sender: UIButton) {
+        if let restaurant = restaurant, let url = URL(string: restaurant.menuLink) {
+            UIApplication.shared.open(url)
+        }
+    }
+    
+    //MARK: – Layout
     private func createLayout() -> UICollectionViewCompositionalLayout {
         let spacing: CGFloat = 8
         let padding: CGFloat = 16

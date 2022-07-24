@@ -43,12 +43,12 @@ class DetailRestaurantViewController: UIViewController {
         setupUI()
         
         if let restaurant = restaurant {
+            title = restaurant.name
             imageView.image = UIImage(named: restaurant.imageName)
             restaurantNameLabel.text = restaurant.name
-            cuisineTypeLabel.text = restaurant.cuisine
+            cuisineTypeLabel.text = restaurant.cuisine.rawValue
             priceLabel.text = restaurant.price.rawValue
             ratingLabel.text = "Rating: \(restaurant.rating)"
-            
         }
         
         collectionView.collectionViewLayout = createLayout()
@@ -88,7 +88,7 @@ extension DetailRestaurantViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dietaryRestrictionOptionCell", for: indexPath) as? EmojiLabelCollectionViewCell, let restaurant = restaurant else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EmojiLabelCollectionViewCell.cellID, for: indexPath) as? EmojiLabelCollectionViewCell, let restaurant = restaurant else { return UICollectionViewCell() }
         
         cell.configureCell(with: restaurant.dietaryRestrictions[indexPath.item].rawValue)
         

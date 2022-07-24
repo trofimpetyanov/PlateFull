@@ -11,7 +11,7 @@ struct Restaurant {
     let name: String
     let imageName: String
     
-    let cuisine: String
+    let cuisine: Cuisine
     let price: Price
     let rating: Double
     

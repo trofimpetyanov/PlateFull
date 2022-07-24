@@ -61,7 +61,17 @@ class SearchCollectionViewController: UICollectionViewController {
         dataSource.apply(snapshot)
     }
     
-    // MARK: – Data Source
+    //MARK: – Actions
+    @IBAction func filtersButtonTapped(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "showFilters", sender: nil)
+    }
+    
+    @IBAction func reloadButtonTapped(_ sender: UIBarButtonItem) {
+        filteredRestaurants = restaurants
+        updateSnapshot()
+    }
+    
+    //MARK: – Data Source
     private func createDataSource() -> DataSourceType {
         let dataSource = DataSourceType(collectionView: collectionView) { collectionView, indexPath, itemIdentifier in
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCollectionViewCell.cellId, for: indexPath) as? SmallCollectionViewCell else { return UICollectionViewCell() }
@@ -74,7 +84,7 @@ class SearchCollectionViewController: UICollectionViewController {
         return dataSource
     }
     
-    // MARK: – Layout
+    //MARK: – Layout
     private func createLayout() -> UICollectionViewCompositionalLayout {
         let spacing: CGFloat = 8
         let padding: CGFloat = 16
@@ -107,5 +117,40 @@ extension SearchCollectionViewController: UISearchResultsUpdating {
         }
         
         updateSnapshot()
+    }
+    
+    @IBAction func unwindFromFiltersCollectionViewController(segue: UIStoryboardSegue) {
+        if segue.identifier == "applyUnwind", let filtersCollectionViewController = segue.source as? FiltersCollectionViewController {
+        
+        let filters = filtersCollectionViewController.filters
+        filteredRestaurants = restaurants
+        
+        if !filters.dietaryRestrictions.isEmpty {
+            filteredRestaurants = filteredRestaurants.filter { restaurant in
+                var isCandidate = true
+                
+                for dietaryRestriction in filters.dietaryRestrictions {
+                    if !restaurant.dietaryRestrictions.contains(dietaryRestriction) {
+                        isCandidate = false
+                    }
+                }
+                
+                return isCandidate
+            }
+        }
+        
+        if !filters.prices.isEmpty {
+            filteredRestaurants = filteredRestaurants.filter { filters.prices.contains($0.price) }
+        }
+        
+        if !filters.cuisines.isEmpty {
+            filteredRestaurants = filteredRestaurants.filter { filters.cuisines.contains($0.cuisine) }
+        }
+        
+        updateSnapshot()
+        } else if segue.identifier == "clearUnwind" {
+            filteredRestaurants = restaurants
+            updateSnapshot()
+        }
     }
 }

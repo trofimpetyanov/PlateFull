@@ -15,7 +15,7 @@ extension UICollectionViewCell {
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0, height: 2)
         layer.shadowRadius = 8.0
-        layer.shadowOpacity = 0.12
+        layer.shadowOpacity = 0.08
         layer.masksToBounds = false
         layer.cornerRadius = 16
         layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: contentView.layer.cornerRadius).cgPath

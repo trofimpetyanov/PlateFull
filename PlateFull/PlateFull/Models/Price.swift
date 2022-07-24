@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Price: String {
+enum Price: String, CaseIterable {
     case cheap = "$-$$"
     case midRange = "$$-$$$"
     case expensive = "$$$-$$$$"

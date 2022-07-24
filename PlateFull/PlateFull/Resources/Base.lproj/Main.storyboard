@@ -405,7 +405,23 @@
                             <outlet property="delegate" destination="GPw-5q-xiU" id="8bZ-na-gfR"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="Search" id="6UL-LS-T2f"/>
+                    <navigationItem key="navigationItem" title="Search" id="6UL-LS-T2f">
+                        <rightBarButtonItems>
+                            <barButtonItem image="arrow.triangle.2.circlepath" catalog="system" id="a0M-bA-fzd">
+                                <connections>
+                                    <action selector="reloadButtonTapped:" destination="GPw-5q-xiU" id="hhR-iP-CnD"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="slider.horizontal.3" catalog="system" id="JB6-Qv-egs">
+                                <connections>
+                                    <action selector="filtersButtonTapped:" destination="GPw-5q-xiU" id="JS5-Fe-PBw"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="pnv-1d-k4g" kind="presentation" identifier="showFilters" id="piH-N3-YS3"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8n-3w-3kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -415,7 +431,7 @@
         <scene sceneID="Esh-fc-wvJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7QI-RA-XrM" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" image="doc.text.image" catalog="system" selectedImage="doc.text.image.fill" id="AMY-jK-qbX"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="doc.text.image" catalog="system" id="AMY-jK-qbX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Kn2-Jw-YP8">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -449,7 +465,7 @@
             </objects>
             <point key="canvasLocation" x="1313" y="-1283"/>
         </scene>
-        <!--Detail Restaurant View Controller-->
+        <!--Restaurant Name-->
         <scene sceneID="tRm-AJ-Ly5">
             <objects>
                 <viewController id="qvR-vI-WJq" customClass="DetailRestaurantViewController" customModule="PlateFull" customModuleProvider="target" sceneMemberID="viewController">
@@ -533,24 +549,24 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dietaryRestrictionOptionCell" id="mZP-hv-Nv1" customClass="EmojiLabelCollectionViewCell" customModule="PlateFull" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="emojiLabelCell" id="JFC-m9-zPh" customClass="EmojiLabelCollectionViewCell" customModule="PlateFull" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="163" height="42"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="zsL-qQ-8Mh">
+                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7Sa-jB-rUi">
                                                     <rect key="frame" x="0.0" y="0.0" width="163" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lk4-Wq-dVv">
-                                                            <rect key="frame" x="8" y="4" width="147" height="34"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1mr-k1-Nyf">
+                                                            <rect key="frame" x="16" y="4" width="131" height="34"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="🍜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-3a-4bG">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="🍜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3SN-kO-smk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="23" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nrD-cE-YiQ">
-                                                                    <rect key="frame" x="31" y="0.0" width="116" height="34"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDP-Si-HDD">
+                                                                    <rect key="frame" x="31" y="0.0" width="100" height="34"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -559,17 +575,17 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="Lk4-Wq-dVv" secondAttribute="bottom" constant="4" id="1rG-PN-d0D"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Lk4-Wq-dVv" secondAttribute="trailing" constant="8" id="Y3j-VQ-Vi2"/>
-                                                        <constraint firstItem="Lk4-Wq-dVv" firstAttribute="leading" secondItem="zsL-qQ-8Mh" secondAttribute="leading" constant="8" id="Ykh-7w-4xI"/>
-                                                        <constraint firstItem="Lk4-Wq-dVv" firstAttribute="top" secondItem="zsL-qQ-8Mh" secondAttribute="top" constant="4" id="mUK-Qf-eEB"/>
+                                                        <constraint firstAttribute="bottom" secondItem="1mr-k1-Nyf" secondAttribute="bottom" constant="4" id="RBL-QL-AFS"/>
+                                                        <constraint firstItem="1mr-k1-Nyf" firstAttribute="leading" secondItem="7Sa-jB-rUi" secondAttribute="leading" constant="16" id="ZVJ-DG-nwG"/>
+                                                        <constraint firstAttribute="trailing" secondItem="1mr-k1-Nyf" secondAttribute="trailing" constant="16" id="adi-eB-8Lo"/>
+                                                        <constraint firstItem="1mr-k1-Nyf" firstAttribute="top" secondItem="7Sa-jB-rUi" secondAttribute="top" constant="4" id="fNT-mq-Nyh"/>
                                                     </constraints>
                                                 </collectionViewCellContentView>
                                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <size key="customSize" width="163" height="42"/>
                                                 <connections>
-                                                    <outlet property="emojiLabel" destination="dBA-3a-4bG" id="s98-Hb-5lp"/>
-                                                    <outlet property="nameLabel" destination="nrD-cE-YiQ" id="WwN-ol-MNW"/>
+                                                    <outlet property="emojiLabel" destination="3SN-kO-smk" id="pYu-lj-vxc"/>
+                                                    <outlet property="nameLabel" destination="IDP-Si-HDD" id="1U1-l6-8Fk"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -631,7 +647,11 @@
                             <constraint firstItem="SC4-Xa-Ssx" firstAttribute="leading" secondItem="Sb2-eE-Iwe" secondAttribute="leading" constant="8" id="xAH-VS-SVb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="UnF-ew-ayM"/>
+                    <navigationItem key="navigationItem" title="Restaurant Name" largeTitleDisplayMode="never" id="UnF-ew-ayM">
+                        <barButtonItem key="rightBarButtonItem" image="heart" catalog="system" id="ACb-q7-c3o">
+                            <color key="tintColor" systemColor="systemPinkColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="RQ2-Au-WKC" id="zuT-Rn-vYQ"/>
                         <outlet property="cuisineTypeLabel" destination="CLZ-NF-9kb" id="S9P-sX-DUR"/>
@@ -645,6 +665,92 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTA-Kd-KVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="951" y="925"/>
+        </scene>
+        <!--Filters-->
+        <scene sceneID="0ai-Sb-GzM">
+            <objects>
+                <collectionViewController id="dg4-DL-dof" customClass="FiltersCollectionViewController" customModule="PlateFull" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jtw-II-ktH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dqg-BC-LwE">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="filterCell" id="eh3-j6-BDc" customClass="FilterCollectionViewCell" customModule="PlateFull" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="189" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="LbH-fp-CbJ">
+                                    <rect key="frame" x="0.0" y="0.0" width="189" height="46"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LjZ-o0-Ln3">
+                                            <rect key="frame" x="16" y="4" width="157" height="38"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="🦋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euv-cx-fN1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="23" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHY-jl-6wR">
+                                                    <rect key="frame" x="31" y="0.0" width="126" height="38"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="LjZ-o0-Ln3" secondAttribute="bottom" constant="4" id="0IK-Eu-LYd"/>
+                                        <constraint firstItem="LjZ-o0-Ln3" firstAttribute="top" secondItem="LbH-fp-CbJ" secondAttribute="top" constant="4" id="k3a-Bb-ADo"/>
+                                        <constraint firstAttribute="trailing" secondItem="LjZ-o0-Ln3" secondAttribute="trailing" constant="16" id="pd4-QG-n08"/>
+                                        <constraint firstItem="LjZ-o0-Ln3" firstAttribute="leading" secondItem="LbH-fp-CbJ" secondAttribute="leading" constant="16" id="pk5-xF-gWC"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <size key="customSize" width="189" height="46"/>
+                                <connections>
+                                    <outlet property="emojiLabel" destination="euv-cx-fN1" id="Ga1-PA-l3Z"/>
+                                    <outlet property="nameLabel" destination="PHY-jl-6wR" id="d8k-OK-kqx"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="dg4-DL-dof" id="gvl-hD-G0V"/>
+                            <outlet property="delegate" destination="dg4-DL-dof" id="CYQ-88-5MM"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Filters" largeTitleDisplayMode="never" id="P7f-T9-QEh">
+                        <leftBarButtonItems>
+                            <barButtonItem title="Cancel" id="NDt-Ak-Rxo">
+                                <connections>
+                                    <action selector="cancelButtonTapped:" destination="dg4-DL-dof" id="1Ia-Ka-jdm"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Clear" id="6AN-be-MPY">
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <segue destination="PHY-yw-WTd" kind="unwind" identifier="clearUnwind" unwindAction="unwindFromFiltersCollectionViewControllerWithSegue:" id="MO2-1B-Qv1"/>
+                                </connections>
+                            </barButtonItem>
+                        </leftBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="Apply" id="Ogi-KI-Bqf">
+                            <connections>
+                                <segue destination="PHY-yw-WTd" kind="unwind" identifier="applyUnwind" unwindAction="unwindFromFiltersCollectionViewControllerWithSegue:" id="GyB-28-VEd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfB-Yq-Z9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="PHY-yw-WTd" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2642.0289855072465" y="924.77678571428567"/>
         </scene>
         <!--Search-->
         <scene sceneID="GQG-er-AHj">
@@ -665,15 +771,34 @@
             </objects>
             <point key="canvasLocation" x="1794" y="-552"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pJf-M6-zIt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pnv-1d-k4g" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RGH-YG-lsq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dg4-DL-dof" kind="relationship" relationship="rootViewController" id="ZeQ-A1-3ww"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ed-Yj-zmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="924.77678571428567"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="doc.text.image" catalog="system" width="115" height="128"/>
-        <image name="doc.text.image.fill" catalog="system" width="115" height="128"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="perchini" width="1920" height="990"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -694,6 +819,9 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -11,3 +11,10 @@ struct DietaryRestrictionOption {
     let name: String
     let emoji: String
 }
+
+extension DietaryRestrictionOption: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
+        hasher.combine(emoji)
+    }
+}

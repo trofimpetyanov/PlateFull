@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DietaryRestrictionOptions {
+enum DietaryRestrictionOptions: CaseIterable {
     case lactoseFree
     case glutenFree
     case vegetarian

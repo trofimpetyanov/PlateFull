@@ -8,6 +8,7 @@
 import UIKit
 
 class EmojiLabelCollectionViewCell: UICollectionViewCell {
+    static let cellID = "emojiLabelCell"
     
     @IBOutlet var emojiLabel: UILabel!
     @IBOutlet var nameLabel: UILabel!

@@ -39,7 +39,7 @@ class WideCollectionViewCell: UICollectionViewCell {
         imageView.image = UIImage(named: restaurant.imageName)
         nameLabel.text = restaurant.name
         dietaryRestrictionOptionsLabel.text = restaurant.dietaryRestrictions.sorted().reduce("") {$0 + $1.rawValue.emoji }
-        cuisineLabel.text = restaurant.cuisine
+        cuisineLabel.text = restaurant.cuisine.rawValue
         priceLabel.text = restaurant.price.rawValue
         
     }

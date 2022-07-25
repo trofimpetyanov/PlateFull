@@ -18,6 +18,7 @@ class EmojiLabelCollectionViewCell: UICollectionViewCell {
         nameLabel.text = dietaryRestrictionOption.name
         
         stylize()
-        layer.cornerRadius = 20
+        layer.cornerRadius = layer.frame.size.height / 2
+        layer.masksToBounds = true
     }
 }

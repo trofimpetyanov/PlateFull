@@ -17,7 +17,7 @@ class FilterCollectionViewCell: UICollectionViewCell {
         didSet {
             if isSelected {
                 layer.borderWidth = 2
-                layer.shadowColor = UIColor.systemBlue.cgColor
+                layer.shadowColor = UIColor.peach.cgColor
                 layer.shadowOpacity = 0.2
             } else {
                 layer.borderWidth = 0
@@ -29,8 +29,9 @@ class FilterCollectionViewCell: UICollectionViewCell {
     
     private func setup() {
         stylize()
-        layer.borderColor = UIColor.systemBlue.cgColor
-        layer.cornerRadius = 20
+        layer.borderColor = UIColor.darkPeach.cgColor
+        layer.cornerRadius = layer.frame.size.height / 2
+        layer.masksToBounds = true
     }
     
     func configureCell(with dietaryRestrictionOption: DietaryRestrictionOption) {

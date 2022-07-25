@@ -9,6 +9,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GilroyRegular.ttf">
+            <string>Gilroy-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Explore-->
         <scene sceneID="eFG-7k-paw">
@@ -17,7 +22,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yy9-rs-iBA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99525803329999996" green="0.93093031640000001" blue="0.88915836810000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8gl-El-CfI">
                             <size key="itemSize" width="372" height="228"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -53,40 +58,40 @@
                                             </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kn4-fF-1bv">
-                                            <rect key="frame" x="0.0" y="180" width="372" height="48"/>
+                                            <rect key="frame" x="0.0" y="176.5" width="372" height="51.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-5j-0gQ">
-                                                    <rect key="frame" x="8" y="4" width="356" height="36"/>
+                                                    <rect key="frame" x="8" y="4" width="356" height="39.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-8U-Bgc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="356" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="356" height="23.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-f7-efo">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="267" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="249.5" height="23.5"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="DRO Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-3F-YxH">
-                                                                    <rect key="frame" x="275" y="0.0" width="81" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <rect key="frame" x="257.5" y="0.0" width="98.5" height="23.5"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-9h-poH">
-                                                            <rect key="frame" x="0.0" y="22.5" width="356" height="13.5"/>
+                                                            <rect key="frame" x="0.0" y="25.5" width="356" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-hS-HCx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="289.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="287.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-wm-lqt">
-                                                                    <rect key="frame" x="297.5" y="0.0" width="58.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="295.5" y="0.0" width="60.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
@@ -108,7 +113,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZK-hv-MlL">
                                                     <rect key="frame" x="4" y="4" width="20" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                     <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -169,31 +174,31 @@
                                                     <rect key="frame" x="0.0" y="135.5" width="149" height="76.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLZ-av-lFc">
-                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gMv-jh-DXz">
-                                                            <rect key="frame" x="0.0" y="38" width="149" height="13.5"/>
+                                                            <rect key="frame" x="0.0" y="34.5" width="149" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yj-EA-iBx">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoa-1e-61L">
-                                                                    <rect key="frame" x="90.5" y="0.0" width="58.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="88.5" y="0.0" width="60.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ld0-9t-MYL">
-                                                            <rect key="frame" x="0.0" y="59.5" width="149" height="17"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="56.5" width="149" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -209,7 +214,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfW-vv-WHd">
                                                     <rect key="frame" x="4" y="4" width="20" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                     <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -241,7 +246,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="backgroundColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Mdo-OM-MCA" firstAttribute="leading" secondItem="E0b-Fe-u54" secondAttribute="leading" constant="12" id="0mh-HW-UDk"/>
                                         <constraint firstItem="R8P-n2-cuC" firstAttribute="top" secondItem="E0b-Fe-u54" secondAttribute="top" constant="8" id="28k-SZ-FkX"/>
@@ -287,9 +292,9 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="YJ9-1B-1Pv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pk9-xt-9ys">
-                            <size key="itemSize" width="128" height="128"/>
+                            <size key="itemSize" width="165" height="228"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -312,31 +317,31 @@
                                                     <rect key="frame" x="0.0" y="135.5" width="149" height="76.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMh-rO-xGZ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xn5-7r-WuO">
-                                                            <rect key="frame" x="0.0" y="38" width="149" height="13.5"/>
+                                                            <rect key="frame" x="0.0" y="34.5" width="149" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6L-1Y-eKA">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttx-Ew-oAK">
-                                                                    <rect key="frame" x="90.5" y="0.0" width="58.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="88.5" y="0.0" width="60.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-4j-kxL">
-                                                            <rect key="frame" x="0.0" y="59.5" width="149" height="17"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="56.5" width="149" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -352,7 +357,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odi-0h-PLT">
                                                     <rect key="frame" x="4" y="4" width="20" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                     <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -384,7 +389,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="backgroundColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="QVI-02-FKF" firstAttribute="top" secondItem="fZr-wg-kRX" secondAttribute="top" constant="12" id="4Xi-T1-hX2"/>
                                         <constraint firstAttribute="trailing" secondItem="QVI-02-FKF" secondAttribute="trailing" constant="12" id="J8u-Be-QoL"/>
@@ -440,7 +445,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8n-3w-3kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="173"/>
+            <point key="canvasLocation" x="1792.753623188406" y="172.76785714285714"/>
         </scene>
         <!--Explore-->
         <scene sceneID="Esh-fc-wvJ">
@@ -475,11 +480,12 @@
                         <segue destination="7QI-RA-XrM" kind="relationship" relationship="viewControllers" id="fY0-oV-VL2"/>
                         <segue destination="oEq-wu-QOp" kind="relationship" relationship="viewControllers" id="k2r-dh-Sz8"/>
                         <segue destination="d3R-RQ-0Hr" kind="relationship" relationship="viewControllers" id="hLd-xU-mP2"/>
+                        <segue destination="wo6-iz-SaE" kind="relationship" relationship="viewControllers" id="RkO-9m-9Q9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQL-gD-f0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1793" y="-1280"/>
+            <point key="canvasLocation" x="2239" y="-1282"/>
         </scene>
         <!--Restaurant Name-->
         <scene sceneID="tRm-AJ-Ly5">
@@ -493,7 +499,7 @@
                                 <rect key="frame" x="0.0" y="377.5" width="414" height="435.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-Hv-wLg">
-                                        <rect key="frame" x="16" y="20" width="382" height="86"/>
+                                        <rect key="frame" x="16" y="20" width="382" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Restaurant Name Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEO-7Y-v0T">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="29"/>
@@ -502,20 +508,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8Xx-mY-IHb">
-                                                <rect key="frame" x="0.0" y="37" width="382" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="37" width="382" height="20"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="kui-oq-gpv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Type Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLZ-NF-9kb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="281.5" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="280.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDE-Wz-CB8">
-                                                                <rect key="frame" x="297.5" y="0.0" width="84.5" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <rect key="frame" x="296.5" y="0.0" width="85.5" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -524,13 +530,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ud4-q6-wtG">
-                                                <rect key="frame" x="0.0" y="65.5" width="382" height="20.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                <rect key="frame" x="0.0" y="65" width="382" height="20"/>
+                                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                 <color key="textColor" systemColor="secondaryLabelColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="MAF-BG-U2v">
-                                                <rect key="frame" x="0.0" y="86" width="382" height="46"/>
+                                                <rect key="frame" x="0.0" y="85" width="382" height="46"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Размер" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-m4-yUP">
                                                         <rect key="frame" x="0.0" y="0.0" width="336" height="46"/>
@@ -556,8 +562,8 @@
                                         </subviews>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RQ2-Au-WKC">
-                                        <rect key="frame" x="16" y="114" width="382" height="247.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="16" y="113" width="382" height="248.5"/>
+                                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rO7-OY-gCl">
                                             <size key="itemSize" width="163" height="42"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -583,13 +589,14 @@
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDP-Si-HDD">
                                                                     <rect key="frame" x="31" y="0.0" width="100" height="34"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                     </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="bottom" secondItem="1mr-k1-Nyf" secondAttribute="bottom" constant="4" id="RBL-QL-AFS"/>
                                                         <constraint firstItem="1mr-k1-Nyf" firstAttribute="leading" secondItem="7Sa-jB-rUi" secondAttribute="leading" constant="16" id="ZVJ-DG-nwG"/>
@@ -615,27 +622,37 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-gf-k0y">
                                                 <rect key="frame" x="0.0" y="0.0" width="249.5" height="46"/>
+                                                <color key="tintColor" red="0.99615484480000005" green="0.49515682459999999" blue="0.2749167085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" image="list.bullet.rectangle.portrait" catalog="system" title="View Menu" imagePadding="8" cornerStyle="medium"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="list.bullet.rectangle.portrait" catalog="system" imagePadding="8" cornerStyle="medium">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="View Menu">
+                                                            <attributes>
+                                                                <font key="NSFont" size="12" name="Gilroy-Regular"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="viewMenuButtonTapped:" destination="qvR-vI-WJq" eventType="touchUpInside" id="If4-GP-lrg"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HaR-9N-egy">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAr-sx-g67">
                                                 <rect key="frame" x="257.5" y="0.0" width="124.5" height="46"/>
+                                                <color key="tintColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" image="map" catalog="system" title="Route" subtitle="In Development" imagePadding="8" cornerStyle="medium">
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="7"/>
+                                                <buttonConfiguration key="configuration" style="filled" image="map" catalog="system" title="Route" subtitle="In Dev" imagePadding="8" cornerStyle="medium">
+                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="9"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="upg-gf-k0y" firstAttribute="width" secondItem="MAr-sx-g67" secondAttribute="width" multiplier="2:1" id="ClV-P2-CA4"/>
                                             <constraint firstAttribute="height" constant="46" id="TV4-YV-3wd"/>
-                                            <constraint firstItem="upg-gf-k0y" firstAttribute="width" secondItem="HaR-9N-egy" secondAttribute="width" multiplier="2:1" id="Vh1-tJ-oBa"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="RQ2-Au-WKC" firstAttribute="top" secondItem="eWZ-Hv-wLg" secondAttribute="bottom" constant="8" id="0Fl-9h-pww"/>
                                     <constraint firstItem="jeZ-ec-bgC" firstAttribute="leading" secondItem="iu1-lA-aBF" secondAttribute="leading" constant="16" id="B8t-nL-w61"/>
@@ -654,7 +671,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sb2-eE-Iwe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Sb2-eE-Iwe" firstAttribute="trailing" secondItem="SC4-Xa-Ssx" secondAttribute="trailing" constant="8" id="1Ti-d9-OJz"/>
                             <constraint firstItem="SC4-Xa-Ssx" firstAttribute="width" secondItem="SC4-Xa-Ssx" secondAttribute="height" multiplier="3:2" id="EjW-ub-aW6"/>
@@ -696,7 +713,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jtw-II-ktH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dqg-BC-LwE">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -722,13 +739,14 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHY-jl-6wR">
                                                     <rect key="frame" x="31" y="0.0" width="126" height="38"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="LjZ-o0-Ln3" secondAttribute="bottom" constant="4" id="0IK-Eu-LYd"/>
                                         <constraint firstItem="LjZ-o0-Ln3" firstAttribute="top" secondItem="LbH-fp-CbJ" secondAttribute="top" constant="4" id="k3a-Bb-ADo"/>
@@ -801,7 +819,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="rm8-Ot-k1E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hkg-6D-867">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -826,31 +844,31 @@
                                                     <rect key="frame" x="0.0" y="135.5" width="149" height="76.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-o1-Lwr">
-                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="30"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="149" height="26.5"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jHn-At-T3E">
-                                                            <rect key="frame" x="0.0" y="38" width="149" height="13.5"/>
+                                                            <rect key="frame" x="0.0" y="34.5" width="149" height="14"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ag-D5-ShR">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="82.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="80.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3w-7h-jsa">
-                                                                    <rect key="frame" x="90.5" y="0.0" width="58.5" height="13.5"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                                    <rect key="frame" x="88.5" y="0.0" width="60.5" height="14"/>
+                                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nj-1d-Sa9">
-                                                            <rect key="frame" x="0.0" y="59.5" width="149" height="17"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                            <rect key="frame" x="0.0" y="56.5" width="149" height="20"/>
+                                                            <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -866,7 +884,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4,7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JO3-qG-dCp">
                                                     <rect key="frame" x="4" y="4" width="20" height="20"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                                                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="11"/>
                                                     <color key="textColor" systemColor="systemGreenColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -898,7 +916,7 @@
                                             </connections>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="backgroundColor" red="1" green="0.7684047222" blue="0.60578238959999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="yzl-6A-OHN" secondAttribute="bottom" constant="8" id="2O6-OH-6ky"/>
                                         <constraint firstAttribute="trailing" secondItem="xMh-iJ-M2Y" secondAttribute="trailing" constant="12" id="6u1-Zg-kyN"/>
@@ -1004,9 +1022,65 @@
             </objects>
             <point key="canvasLocation" x="2642" y="-552"/>
         </scene>
+        <!--Profile-->
+        <scene sceneID="BZH-xk-axR">
+            <objects>
+                <viewController id="4he-2G-EIZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d3k-9e-xN8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile section and premium subscription option are to be added soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEE-s6-ei5">
+                                <rect key="frame" x="40" y="388.5" width="334" height="39.5"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szi-EP-VK0">
+                                <rect key="frame" x="181" y="448" width="52" height="58"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="V4d-I5-F8s"/>
+                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="jEE-s6-ei5" secondAttribute="trailing" constant="40" id="0aD-bv-CTu"/>
+                            <constraint firstItem="jEE-s6-ei5" firstAttribute="centerY" secondItem="d3k-9e-xN8" secondAttribute="centerY" constant="-40" id="16f-qn-SCm"/>
+                            <constraint firstItem="jEE-s6-ei5" firstAttribute="leading" secondItem="V4d-I5-F8s" secondAttribute="leading" constant="40" id="6Pu-01-xCh"/>
+                            <constraint firstItem="szi-EP-VK0" firstAttribute="centerX" secondItem="d3k-9e-xN8" secondAttribute="centerX" id="7Dg-BN-ZET"/>
+                            <constraint firstItem="szi-EP-VK0" firstAttribute="top" secondItem="jEE-s6-ei5" secondAttribute="bottom" constant="20" id="kaJ-Yd-w5K"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="8sx-nM-LIX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L34-D9-Vdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3482.608695652174" y="172.76785714285714"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="gTn-bj-jCh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wo6-iz-SaE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="DhH-Fu-3nH"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZwV-xE-f5T">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4he-2G-EIZ" kind="relationship" relationship="rootViewController" id="pMu-Hg-elH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3T8-7g-VcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3482.608695652174" y="-552.45535714285711"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wXY-W1-XAT"/>
+        <segue reference="L1Y-la-xUT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
@@ -1016,6 +1090,7 @@
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="perchini" width="1920" height="990"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

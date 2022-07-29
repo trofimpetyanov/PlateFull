@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8124CB38288E1DEE00F6B310 /* GilroyRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8124CB37288E1DEE00F6B310 /* GilroyRegular.ttf */; };
+		8124CB44288E343A00F6B310 /* AppearanceConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124CB43288E343A00F6B310 /* AppearanceConfigurator.swift */; };
+		8124CB46288E349A00F6B310 /* UIColor+CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124CB45288E349A00F6B310 /* UIColor+CustomColors.swift */; };
 		8142B2E3288D336000C1DFBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B2E2288D336000C1DFBC /* AppDelegate.swift */; };
 		8142B2E5288D336000C1DFBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8142B2E4288D336000C1DFBC /* SceneDelegate.swift */; };
 		8142B2EA288D336000C1DFBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8142B2E8288D336000C1DFBC /* Main.storyboard */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8124CB37288E1DEE00F6B310 /* GilroyRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GilroyRegular.ttf; sourceTree = "<group>"; };
+		8124CB43288E343A00F6B310 /* AppearanceConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceConfigurator.swift; sourceTree = "<group>"; };
+		8124CB45288E349A00F6B310 /* UIColor+CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+CustomColors.swift"; sourceTree = "<group>"; };
 		8142B2DF288D336000C1DFBC /* PlateFull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlateFull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8142B2E2288D336000C1DFBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8142B2E4288D336000C1DFBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +83,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8124CB1E288E175400F6B310 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8124CB37288E1DEE00F6B310 /* GilroyRegular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8124CB47288E376B00F6B310 /* DietaryRestrictions */ = {
+			isa = PBXGroup;
+			children = (
+				81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */,
+				8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */,
+			);
+			path = DietaryRestrictions;
+			sourceTree = "<group>";
+		};
+		8124CB48288E37B200F6B310 /* SectionHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */,
+				81F0623C288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift */,
+			);
+			path = SectionHeaders;
+			sourceTree = "<group>";
+		};
 		8142B2D6288D336000C1DFBC = {
 			isa = PBXGroup;
 			children = (
@@ -113,9 +145,8 @@
 				8142B2FC288D413D00C1DFBC /* Restaurant.swift */,
 				81F06238288DCAD700D18961 /* Cuisine.swift */,
 				8142B2FE288D41B700C1DFBC /* Price.swift */,
+				8124CB47288E376B00F6B310 /* DietaryRestrictions */,
 				81F06236288DCA0000D18961 /* Filters.swift */,
-				81F06224288D76AC00D18961 /* DietaryRestrictionOption.swift */,
-				8142B300288D423F00C1DFBC /* DietaryRestrictionOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,8 +154,7 @@
 		81F06227288D7E7700D18961 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8142B30A288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift */,
-				81F0623C288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift */,
+				8124CB48288E37B200F6B310 /* SectionHeaders */,
 				8142B2F8288D402A00C1DFBC /* SmallCollectionViewCell.swift */,
 				8142B2F6288D400000C1DFBC /* WideCollectionViewCell.swift */,
 				81F0623E288DDFB200D18961 /* FilterCollectionViewCell.swift */,
@@ -139,9 +169,9 @@
 				8142B2FA288D40B700C1DFBC /* ExploreCollectionViewController.swift */,
 				81F0622C288D838D00D18961 /* DetailRestaurantViewController.swift */,
 				81F06232288D9CFA00D18961 /* SearchCollectionViewController.swift */,
+				81F06234288DC8B600D18961 /* FiltersCollectionViewController.swift */,
 				81F06240288E000400D18961 /* FavoritesCollectionViewController.swift */,
 				81F06242288E0ACD00D18961 /* MapViewViewController.swift */,
-				81F06234288DC8B600D18961 /* FiltersCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -151,6 +181,7 @@
 			children = (
 				8142B308288D70BC00C1DFBC /* UIView+Blur.swift */,
 				81F06230288D8B9C00D18961 /* UICollectionViewCell+Stylize.swift */,
+				8124CB45288E349A00F6B310 /* UIColor+CustomColors.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -163,6 +194,7 @@
 				8142B2E4288D336000C1DFBC /* SceneDelegate.swift */,
 				8142B2ED288D336300C1DFBC /* LaunchScreen.storyboard */,
 				8142B2E8288D336000C1DFBC /* Main.storyboard */,
+				8124CB1E288E175400F6B310 /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -171,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				8142B302288D49EF00C1DFBC /* DataManager.swift */,
+				8124CB43288E343A00F6B310 /* AppearanceConfigurator.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -236,6 +269,7 @@
 				8142B2EF288D336300C1DFBC /* LaunchScreen.storyboard in Resources */,
 				8142B2EC288D336300C1DFBC /* Assets.xcassets in Resources */,
 				8142B2EA288D336000C1DFBC /* Main.storyboard in Resources */,
+				8124CB38288E1DEE00F6B310 /* GilroyRegular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +282,7 @@
 			files = (
 				81F06233288D9CFA00D18961 /* SearchCollectionViewController.swift in Sources */,
 				81F0623D288DD9E600D18961 /* SecondarySectionHeaderCollectionReusableView.swift in Sources */,
+				8124CB44288E343A00F6B310 /* AppearanceConfigurator.swift in Sources */,
 				8142B2F9288D402A00C1DFBC /* SmallCollectionViewCell.swift in Sources */,
 				8142B2FF288D41B700C1DFBC /* Price.swift in Sources */,
 				81F0623F288DDFB200D18961 /* FilterCollectionViewCell.swift in Sources */,
@@ -261,6 +296,7 @@
 				81F06241288E000400D18961 /* FavoritesCollectionViewController.swift in Sources */,
 				8142B2E5288D336000C1DFBC /* SceneDelegate.swift in Sources */,
 				81F06225288D76AC00D18961 /* DietaryRestrictionOption.swift in Sources */,
+				8124CB46288E349A00F6B310 /* UIColor+CustomColors.swift in Sources */,
 				81F06235288DC8B600D18961 /* FiltersCollectionViewController.swift in Sources */,
 				8142B309288D70BC00C1DFBC /* UIView+Blur.swift in Sources */,
 				8142B30B288D72CB00C1DFBC /* SectionHeaderCollectionReusableView.swift in Sources */,

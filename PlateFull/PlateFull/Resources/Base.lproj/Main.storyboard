@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JJN-Tn-J9h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JJN-Tn-J9h">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -51,7 +52,7 @@
                                                 <imageReference key="image" image="heart" catalog="system" symbolScale="small"/>
                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
-                                                <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="baseBackgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="favoriteButtonTapped:" destination="M2Z-il-yAY" eventType="touchUpInside" id="xDa-G4-jno"/>
@@ -63,16 +64,16 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-5j-0gQ">
                                                     <rect key="frame" x="8" y="4" width="356" height="39.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-8U-Bgc">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-8U-Bgc">
                                                             <rect key="frame" x="0.0" y="0.0" width="356" height="23.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-f7-efo">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-f7-efo">
                                                                     <rect key="frame" x="0.0" y="0.0" width="249.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="DRO Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-3F-YxH">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="DRO Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-3F-YxH">
                                                                     <rect key="frame" x="257.5" y="0.0" width="98.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
@@ -80,16 +81,16 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-9h-poH">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-9h-poH">
                                                             <rect key="frame" x="0.0" y="25.5" width="356" height="14"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-hS-HCx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cuisine Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-hS-HCx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="287.5" height="14"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-wm-lqt">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-wm-lqt">
                                                                     <rect key="frame" x="295.5" y="0.0" width="60.5" height="14"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -118,7 +119,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="nZK-hv-MlL" firstAttribute="leading" secondItem="VOR-Qx-9gT" secondAttribute="leading" constant="4" id="Ae6-uc-W33"/>
                                                 <constraint firstAttribute="height" constant="28" id="Dbh-CR-3OF"/>
@@ -219,7 +220,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="IfW-vv-WHd" secondAttribute="bottom" constant="4" id="5z8-yT-ePc"/>
                                                 <constraint firstItem="IfW-vv-WHd" firstAttribute="leading" secondItem="Mdo-OM-MCA" secondAttribute="leading" constant="4" id="7eE-kA-QC6"/>
@@ -239,7 +240,7 @@
                                             <buttonConfiguration key="configuration" style="filled" image="heart" catalog="system" cornerStyle="capsule">
                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
-                                                <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="baseBackgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="favoriteButtonTapped:" destination="JZG-FP-1b1" eventType="touchUpInside" id="wMW-Re-HRW"/>
@@ -362,7 +363,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="28" id="1Nf-Wc-52S"/>
                                                 <constraint firstAttribute="trailing" secondItem="odi-0h-PLT" secondAttribute="trailing" constant="4" id="bCZ-Sk-Qpv"/>
@@ -382,7 +383,7 @@
                                             <buttonConfiguration key="configuration" style="filled" image="heart" catalog="system" cornerStyle="capsule">
                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
-                                                <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="baseBackgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="favoriteButtonTapped:" destination="9bU-3b-YWe" eventType="touchUpInside" id="FGe-59-pnm"/>
@@ -454,7 +455,7 @@
                     <tabBarItem key="tabBarItem" title="Explore" image="doc.text.image" catalog="system" id="AMY-jK-qbX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Kn2-Jw-YP8">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -480,7 +481,6 @@
                         <segue destination="7QI-RA-XrM" kind="relationship" relationship="viewControllers" id="fY0-oV-VL2"/>
                         <segue destination="oEq-wu-QOp" kind="relationship" relationship="viewControllers" id="k2r-dh-Sz8"/>
                         <segue destination="d3R-RQ-0Hr" kind="relationship" relationship="viewControllers" id="hLd-xU-mP2"/>
-                        <segue destination="wo6-iz-SaE" kind="relationship" relationship="viewControllers" id="RkO-9m-9Q9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQL-gD-f0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -496,7 +496,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iu1-lA-aBF">
-                                <rect key="frame" x="0.0" y="377.5" width="414" height="435.5"/>
+                                <rect key="frame" x="0.0" y="381.5" width="414" height="431.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-Hv-wLg">
                                         <rect key="frame" x="16" y="20" width="382" height="85"/>
@@ -562,7 +562,7 @@
                                         </subviews>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="RQ2-Au-WKC">
-                                        <rect key="frame" x="16" y="113" width="382" height="248.5"/>
+                                        <rect key="frame" x="16" y="113" width="382" height="244.5"/>
                                         <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rO7-OY-gCl">
                                             <size key="itemSize" width="163" height="42"/>
@@ -618,10 +618,10 @@
                                         </connections>
                                     </collectionView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jeZ-ec-bgC">
-                                        <rect key="frame" x="16" y="381.5" width="382" height="46"/>
+                                        <rect key="frame" x="16" y="377.5" width="382" height="46"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upg-gf-k0y">
-                                                <rect key="frame" x="0.0" y="0.0" width="249.5" height="46"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="46"/>
                                                 <color key="tintColor" red="0.99615484480000005" green="0.49515682459999999" blue="0.2749167085" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="list.bullet.rectangle.portrait" catalog="system" imagePadding="8" cornerStyle="medium">
@@ -650,6 +650,11 @@
                                             <constraint firstItem="upg-gf-k0y" firstAttribute="width" secondItem="MAr-sx-g67" secondAttribute="width" multiplier="2:1" id="ClV-P2-CA4"/>
                                             <constraint firstAttribute="height" constant="46" id="TV4-YV-3wd"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="subviews">
+                                                <exclude reference="MAr-sx-g67"/>
+                                            </mask>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -667,7 +672,7 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="perchini" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-Xa-Ssx">
-                                <rect key="frame" x="8" y="96" width="398" height="265.5"/>
+                                <rect key="frame" x="8" y="100" width="398" height="265.5"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sb2-eE-Iwe"/>
@@ -711,7 +716,7 @@
             <objects>
                 <collectionViewController id="dg4-DL-dof" customClass="FiltersCollectionViewController" customModule="PlateFull" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jtw-II-ktH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Dqg-BC-LwE">
@@ -800,7 +805,7 @@
                     <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="bUX-7j-sPb"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="7rm-MD-6JU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -889,7 +894,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="JO3-qG-dCp" secondAttribute="trailing" constant="4" id="6Y6-3H-qa3"/>
                                                 <constraint firstAttribute="width" constant="28" id="DKZ-3S-LNd"/>
@@ -909,7 +914,7 @@
                                             <buttonConfiguration key="configuration" style="filled" image="heart" catalog="system" cornerStyle="capsule">
                                                 <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="small"/>
                                                 <color key="baseForegroundColor" systemColor="systemPinkColor"/>
-                                                <color key="baseBackgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="baseBackgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </buttonConfiguration>
                                             <connections>
                                                 <action selector="favoriteButtonTapped:" destination="7Bx-mI-zoQ" eventType="touchUpInside" id="kj8-vn-UUN"/>
@@ -982,7 +987,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdM-QP-63j">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="92" width="414" height="721"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XqO-4E-QHM"/>
@@ -1010,7 +1015,7 @@
                     <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" id="IXx-qT-ve7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Zbp-J8-OMm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1066,7 +1071,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="DhH-Fu-3nH"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZwV-xE-f5T">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1080,20 +1085,20 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="L1Y-la-xUT"/>
+        <segue reference="FCp-gi-ChO"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="104"/>
         <image name="doc.text.image" catalog="system" width="115" height="128"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="list.bullet.rectangle.portrait" catalog="system" width="115" height="128"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="map" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="map" catalog="system" width="128" height="112"/>
         <image name="perchini" width="1920" height="990"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <image name="slider.horizontal.3" catalog="system" width="128" height="100"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

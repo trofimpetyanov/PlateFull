@@ -28,7 +28,9 @@ class MapViewViewController: UIViewController {
         
         addAnnotations()
         
-        mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: restaurants[7].latitude, longitude: restaurants[0].longitude), span: MKCoordinateSpan(latitudeDelta: 0.16, longitudeDelta: 0.12)), animated: true)
+		if let lastRestaurant = restaurants.last, let firstRestaurant = restaurants.first {
+			mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: lastRestaurant.latitude, longitude: firstRestaurant.longitude), span: MKCoordinateSpan(latitudeDelta: 0.16, longitudeDelta: 0.12)), animated: true)
+		}
     }
     
     func addAnnotations() {

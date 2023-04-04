@@ -1,0 +1,153 @@
+
+/* Class = "UILabel"; text = "Cuisine Label"; ObjectID = "1Ag-D5-ShR"; */
+"1Ag-D5-ShR.text" = "Cuisine Label";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "2Mp-r2-Q23"; */
+"2Mp-r2-Q23.title" = "Favorites";
+
+/* Class = "UILabel"; text = "🍜"; ObjectID = "3SN-kO-smk"; */
+"3SN-kO-smk.text" = "🍜";
+
+/* Class = "UIBarButtonItem"; title = "Clear"; ObjectID = "6AN-be-MPY"; */
+"6AN-be-MPY.title" = "Clear";
+
+/* Class = "UINavigationItem"; title = "Search"; ObjectID = "6UL-LS-T2f"; */
+"6UL-LS-T2f.title" = "Search";
+
+/* Class = "UILabel"; text = "Cuisine Label"; ObjectID = "6yj-EA-iBx"; */
+"6yj-EA-iBx.text" = "Cuisine Label";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "9gW-f7-efo"; */
+"9gW-f7-efo.text" = "Name Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9nj-1d-Sa9"; */
+"9nj-1d-Sa9.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Explore"; ObjectID = "AMY-jK-qbX"; */
+"AMY-jK-qbX.title" = "Explore";
+
+/* Class = "UILabel"; text = "Cuisine Type Label"; ObjectID = "CLZ-NF-9kb"; */
+"CLZ-NF-9kb.text" = "Cuisine Type Label";
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "DMC-DF-qyR"; */
+"DMC-DF-qyR.title" = "Map";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "FWf-o1-Lwr"; */
+"FWf-o1-Lwr.text" = "Name Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Gth-4j-kxL"; */
+"Gth-4j-kxL.text" = "Label";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "IDP-Si-HDD"; */
+"IDP-Si-HDD.text" = "Name Label";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "IXx-qT-ve7"; */
+"IXx-qT-ve7.title" = "Favorites";
+
+/* Class = "UILabel"; text = "4,7"; ObjectID = "IfW-vv-WHd"; */
+"IfW-vv-WHd.text" = "4,7";
+
+/* Class = "UILabel"; text = "4,7"; ObjectID = "JO3-qG-dCp"; */
+"JO3-qG-dCp.text" = "4,7";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Ld0-9t-MYL"; */
+"Ld0-9t-MYL.text" = "Label";
+
+/* Class = "UIButton"; configuration.subtitle = "In Dev"; ObjectID = "MAr-sx-g67"; */
+"MAr-sx-g67.configuration.subtitle" = "In Dev";
+
+/* Class = "UIButton"; configuration.title = "Route"; ObjectID = "MAr-sx-g67"; */
+"MAr-sx-g67.configuration.title" = "Route";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "MAr-sx-g67"; */
+"MAr-sx-g67.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "MLZ-av-lFc"; */
+"MLZ-av-lFc.text" = "Name Label";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "NDt-Ak-Rxo"; */
+"NDt-Ak-Rxo.title" = "Cancel";
+
+/* Class = "UIBarButtonItem"; title = "Apply"; ObjectID = "Ogi-KI-Bqf"; */
+"Ogi-KI-Bqf.title" = "Apply";
+
+/* Class = "UINavigationItem"; title = "Filters"; ObjectID = "P7f-T9-QEh"; */
+"P7f-T9-QEh.title" = "Filters";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "PHY-jl-6wR"; */
+"PHY-jl-6wR.text" = "Name Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QVI-02-FKF"; */
+"QVI-02-FKF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Price Label"; ObjectID = "Ttx-Ew-oAK"; */
+"Ttx-Ew-oAK.text" = "Price Label";
+
+/* Class = "UILabel"; text = "Name Label"; ObjectID = "UMh-rO-xGZ"; */
+"UMh-rO-xGZ.text" = "Name Label";
+
+/* Class = "UINavigationItem"; title = "Restaurant Name"; ObjectID = "UnF-ew-ayM"; */
+"UnF-ew-ayM.title" = "Restaurant Name";
+
+/* Class = "UILabel"; text = "Restaurant Name Label"; ObjectID = "XEO-7Y-v0T"; */
+"XEO-7Y-v0T.text" = "Restaurant Name Label";
+
+/* Class = "UITabBarItem"; title = "Search"; ObjectID = "bUX-7j-sPb"; */
+"bUX-7j-sPb.title" = "Search";
+
+/* Class = "UILabel"; text = "Price Label"; ObjectID = "d3w-7h-jsa"; */
+"d3w-7h-jsa.text" = "Price Label";
+
+/* Class = "UILabel"; text = "🦋"; ObjectID = "euv-cx-fN1"; */
+"euv-cx-fN1.text" = "🦋";
+
+/* Class = "UILabel"; text = "Price Label"; ObjectID = "hoa-1e-61L"; */
+"hoa-1e-61L.text" = "Price Label";
+
+/* Class = "UIButton"; normalTitle = "–"; ObjectID = "iBm-6O-yAJ"; */
+"iBm-6O-yAJ.normalTitle" = "–";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jgx-0S-WhU"; */
+"jgx-0S-WhU.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Размер"; ObjectID = "ks0-m4-yUP"; */
+"ks0-m4-yUP.text" = "Размер";
+
+/* Class = "UILabel"; text = "Price Label"; ObjectID = "lDE-Wz-CB8"; */
+"lDE-Wz-CB8.text" = "Price Label";
+
+/* Class = "UILabel"; text = "4,7"; ObjectID = "nZK-hv-MlL"; */
+"nZK-hv-MlL.text" = "4,7";
+
+/* Class = "UILabel"; text = "4,7"; ObjectID = "odi-0h-PLT"; */
+"odi-0h-PLT.text" = "4,7";
+
+/* Class = "UILabel"; text = "DRO Label"; ObjectID = "pVi-3F-YxH"; */
+"pVi-3F-YxH.text" = "DRO Label";
+
+/* Class = "UILabel"; text = "Cuisine Label"; ObjectID = "s6L-1Y-eKA"; */
+"s6L-1Y-eKA.text" = "Cuisine Label";
+
+/* Class = "UILabel"; text = "Rating Label"; ObjectID = "ud4-q6-wtG"; */
+"ud4-q6-wtG.text" = "Rating Label";
+
+/* Class = "UIButton"; configuration.title = "View Menu"; ObjectID = "upg-gf-k0y"; */
+"upg-gf-k0y.configuration.title" = "View Menu";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "upg-gf-k0y"; */
+"upg-gf-k0y.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Explore"; ObjectID = "wqc-DP-5HV"; */
+"wqc-DP-5HV.title" = "Explore";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xMh-iJ-M2Y"; */
+"xMh-iJ-M2Y.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Cuisine Label"; ObjectID = "xNC-hS-HCx"; */
+"xNC-hS-HCx.text" = "Cuisine Label";
+
+/* Class = "UILabel"; text = "Price Label"; ObjectID = "yjz-wm-lqt"; */
+"yjz-wm-lqt.text" = "Price Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ywT-m3-jkY"; */
+"ywT-m3-jkY.normalTitle" = "Button";

@@ -165,7 +165,7 @@ class FiltersCollectionViewController: UICollectionViewController {
                 
                 switch section {
                 case .dietaryRestrictions:
-                    sectionName = "Dietary Restrictions"
+					sectionName = NSLocalizedString("Dietary Restrictions", comment: "")
                 case .prices:
                     sectionName = "Price"
                 case .cuisines:

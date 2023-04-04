@@ -64,16 +64,16 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qHN-5j-0gQ">
                                                     <rect key="frame" x="8" y="4" width="356" height="39.5"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-8U-Bgc">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2qf-8U-Bgc">
                                                             <rect key="frame" x="0.0" y="0.0" width="356" height="23.5"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-f7-efo">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gW-f7-efo">
                                                                     <rect key="frame" x="0.0" y="0.0" width="249.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="DRO Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-3F-YxH">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="DRO Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVi-3F-YxH">
                                                                     <rect key="frame" x="257.5" y="0.0" width="98.5" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="20"/>
                                                                     <nil key="textColor"/>
@@ -81,16 +81,16 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-9h-poH">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="sJe-9h-poH">
                                                             <rect key="frame" x="0.0" y="25.5" width="356" height="14"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cuisine Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-hS-HCx">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuisine Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-hS-HCx">
                                                                     <rect key="frame" x="0.0" y="0.0" width="287.5" height="14"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" ambiguous="YES" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-wm-lqt">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Price Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjz-wm-lqt">
                                                                     <rect key="frame" x="295.5" y="0.0" width="60.5" height="14"/>
                                                                     <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="12"/>
                                                                     <color key="textColor" systemColor="secondaryLabelColor"/>
@@ -284,7 +284,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5I-lT-vvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950.72463768115949" y="173.4375"/>
+            <point key="canvasLocation" x="303" y="-24"/>
         </scene>
         <!--Search-->
         <scene sceneID="fdM-eQ-hab">
@@ -446,7 +446,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8n-3w-3kq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="172.76785714285714"/>
+            <point key="canvasLocation" x="303" y="1436"/>
         </scene>
         <!--Explore-->
         <scene sceneID="Esh-fc-wvJ">
@@ -465,7 +465,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MRm-3z-6G6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="-552"/>
+            <point key="canvasLocation" x="-533" y="-24"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="s6g-om-B1O">
@@ -485,7 +485,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQL-gD-f0r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239" y="-1282"/>
+            <point key="canvasLocation" x="-1317" y="705"/>
         </scene>
         <!--Restaurant Name-->
         <scene sceneID="tRm-AJ-Ly5">
@@ -709,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jTA-Kd-KVz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="951" y="925"/>
+            <point key="canvasLocation" x="1136" y="704"/>
         </scene>
         <!--Filters-->
         <scene sceneID="0ai-Sb-GzM">
@@ -773,19 +773,11 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Filters" largeTitleDisplayMode="never" id="P7f-T9-QEh">
-                        <leftBarButtonItems>
-                            <barButtonItem title="Cancel" id="NDt-Ak-Rxo">
-                                <connections>
-                                    <action selector="cancelButtonTapped:" destination="dg4-DL-dof" id="1Ia-Ka-jdm"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem title="Clear" id="6AN-be-MPY">
-                                <color key="tintColor" systemColor="systemRedColor"/>
-                                <connections>
-                                    <segue destination="PHY-yw-WTd" kind="unwind" identifier="clearUnwind" unwindAction="unwindFromFiltersCollectionViewControllerWithSegue:" id="MO2-1B-Qv1"/>
-                                </connections>
-                            </barButtonItem>
-                        </leftBarButtonItems>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="NDt-Ak-Rxo">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="dg4-DL-dof" id="1Ia-Ka-jdm"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Apply" id="Ogi-KI-Bqf">
                             <connections>
                                 <segue destination="PHY-yw-WTd" kind="unwind" identifier="applyUnwind" unwindAction="unwindFromFiltersCollectionViewControllerWithSegue:" id="GyB-28-VEd"/>
@@ -796,7 +788,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfB-Yq-Z9V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="PHY-yw-WTd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2642.0289855072465" y="924.77678571428567"/>
+            <point key="canvasLocation" x="2006" y="1436"/>
         </scene>
         <!--Search-->
         <scene sceneID="GQG-er-AHj">
@@ -815,7 +807,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAg-Km-LOg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1794" y="-552"/>
+            <point key="canvasLocation" x="-533" y="1436"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="kA1-zP-QZ4">
@@ -958,7 +950,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xS-xx-Q6z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="173"/>
+            <point key="canvasLocation" x="303" y="704"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pJf-M6-zIt">
@@ -976,7 +968,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2ed-Yj-zmT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="924.77678571428567"/>
+            <point key="canvasLocation" x="1135" y="1436"/>
         </scene>
         <!--Map-->
         <scene sceneID="XIh-PE-HPc">
@@ -1006,7 +998,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuG-fy-cnL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1792.753623188406" y="1653.3482142857142"/>
+            <point key="canvasLocation" x="2006" y="704"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="qxI-WO-08M">
@@ -1025,67 +1017,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GRE-ZW-SDq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2642" y="-552"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="BZH-xk-axR">
-            <objects>
-                <viewController id="4he-2G-EIZ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="d3k-9e-xN8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile section and premium subscription option are to be added soon." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jEE-s6-ei5">
-                                <rect key="frame" x="40" y="388.5" width="334" height="39.5"/>
-                                <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy" pointSize="17"/>
-                                <color key="textColor" systemColor="secondaryLabelColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szi-EP-VK0">
-                                <rect key="frame" x="181" y="448" width="52" height="58"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="V4d-I5-F8s"/>
-                        <color key="backgroundColor" red="0.99533504250000004" green="0.92792004350000001" blue="0.88916319610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="jEE-s6-ei5" secondAttribute="trailing" constant="40" id="0aD-bv-CTu"/>
-                            <constraint firstItem="jEE-s6-ei5" firstAttribute="centerY" secondItem="d3k-9e-xN8" secondAttribute="centerY" constant="-40" id="16f-qn-SCm"/>
-                            <constraint firstItem="jEE-s6-ei5" firstAttribute="leading" secondItem="V4d-I5-F8s" secondAttribute="leading" constant="40" id="6Pu-01-xCh"/>
-                            <constraint firstItem="szi-EP-VK0" firstAttribute="centerX" secondItem="d3k-9e-xN8" secondAttribute="centerX" id="7Dg-BN-ZET"/>
-                            <constraint firstItem="szi-EP-VK0" firstAttribute="top" secondItem="jEE-s6-ei5" secondAttribute="bottom" constant="20" id="kaJ-Yd-w5K"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Profile" id="8sx-nM-LIX"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L34-D9-Vdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3482.608695652174" y="172.76785714285714"/>
-        </scene>
-        <!--Profile-->
-        <scene sceneID="gTn-bj-jCh">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wo6-iz-SaE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="DhH-Fu-3nH"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ZwV-xE-f5T">
-                        <rect key="frame" x="0.0" y="48" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="4he-2G-EIZ" kind="relationship" relationship="rootViewController" id="pMu-Hg-elH"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3T8-7g-VcB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3482.608695652174" y="-552.45535714285711"/>
+            <point key="canvasLocation" x="-533" y="704"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="FCp-gi-ChO"/>
+        <segue reference="wXY-W1-XAT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="104"/>
@@ -1095,7 +1031,6 @@
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="map" catalog="system" width="128" height="112"/>
         <image name="perchini" width="1920" height="990"/>
-        <image name="person" catalog="system" width="128" height="121"/>
         <image name="slider.horizontal.3" catalog="system" width="128" height="99"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1117,9 +1052,6 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

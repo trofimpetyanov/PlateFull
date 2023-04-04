@@ -91,15 +91,26 @@ class DetailRestaurantViewController: UIViewController {
         let padding: CGFloat = 16
         
         let layout = UICollectionViewCompositionalLayout { sectionIndex, layoutEnvironment in
-            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1))
+            let itemSize = NSCollectionLayoutSize(
+				widthDimension: .fractionalWidth(0.5),
+				heightDimension: .fractionalHeight(1)
+			)
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .absolute(40))
+            let groupSize = NSCollectionLayoutSize(
+				widthDimension: .fractionalWidth(1),
+				heightDimension: .absolute(40)
+			)
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
             group.interItemSpacing = .fixed(spacing)
             
             let section = NSCollectionLayoutSection(group: group)
-            section.contentInsets = NSDirectionalEdgeInsets(top: padding, leading: spacing, bottom: padding, trailing: spacing)
+            section.contentInsets = NSDirectionalEdgeInsets(
+				top: padding,
+				leading: spacing,
+				bottom: padding,
+				trailing: spacing
+			)
             section.interGroupSpacing = spacing
             
             return section

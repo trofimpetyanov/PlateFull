@@ -36,9 +36,16 @@ class MapViewViewController: UIViewController {
     func addAnnotations() {
         for restaurant in restaurants {
             let annotation = MKPointAnnotation()
-            annotation.coordinate = CLLocationCoordinate2D(latitude: restaurant.latitude, longitude: restaurant.longitude)
+			
+            annotation.coordinate = CLLocationCoordinate2D(
+				latitude: restaurant.latitude,
+				longitude: restaurant.longitude
+			)
             annotation.title = restaurant.name
-            annotation.subtitle = restaurant.dietaryRestrictions.reduce("") { $0 + $1.rawValue.emoji }
+            annotation.subtitle = restaurant
+				.dietaryRestrictions
+				.reduce("") { $0 + $1.rawValue.emoji }
+			
             self.mapView.addAnnotation(annotation)
         }
     }

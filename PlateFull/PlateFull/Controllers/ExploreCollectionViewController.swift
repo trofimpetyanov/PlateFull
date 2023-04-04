@@ -74,13 +74,19 @@ class ExploreCollectionViewController: UICollectionViewController {
             
             switch section {
             case .newlyAdded:
-                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WideCollectionViewCell.cellId, for: indexPath) as? WideCollectionViewCell else { return UICollectionViewCell() }
+                guard let cell = collectionView.dequeueReusableCell(
+					withReuseIdentifier: WideCollectionViewCell.cellId,
+					for: indexPath
+				) as? WideCollectionViewCell else { return UICollectionViewCell() }
                 
                 cell.configureCell(with: itemIdentifier)
                 
                 return cell
             case .localsChoice, .mostPopular:
-                guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SmallCollectionViewCell.cellId, for: indexPath) as? SmallCollectionViewCell else { return UICollectionViewCell() }
+                guard let cell = collectionView.dequeueReusableCell(
+					withReuseIdentifier: SmallCollectionViewCell.cellId,
+					for: indexPath
+				) as? SmallCollectionViewCell else { return UICollectionViewCell() }
                 
                 cell.configureCell(with: itemIdentifier)
                 
@@ -91,18 +97,22 @@ class ExploreCollectionViewController: UICollectionViewController {
         dataSource.supplementaryViewProvider = { collectionView, kind, indexPath -> UICollectionReusableView? in
             switch kind {
             case SupplementaryViewKind.sectionHeader:
-                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: SectionHeaderCollectionReusableView.reuseIdentifier, for: indexPath) as? SectionHeaderCollectionReusableView else { return nil }
+                guard let headerView = collectionView.dequeueReusableSupplementaryView(
+					ofKind: kind,
+					withReuseIdentifier: SectionHeaderCollectionReusableView.reuseIdentifier,
+					for: indexPath
+				) as? SectionHeaderCollectionReusableView else { return nil }
                 
                 let section = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
                 let sectionName: String
                 
                 switch section {
                 case .newlyAdded:
-                    sectionName = "Newly Added"
+					sectionName = NSLocalizedString("Newly Added", comment: "")
                 case .mostPopular:
-                    sectionName = "Most Popular"
+					sectionName = NSLocalizedString("Most Popular", comment: "")
                 case .localsChoice:
-                    sectionName = "Locals Choice"
+					sectionName = NSLocalizedString("Locals Choice", comment: "")
                 }
                 
                 headerView.setTitle(sectionName)

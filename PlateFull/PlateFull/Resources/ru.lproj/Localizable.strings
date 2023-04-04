@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  PlateFull
+
+  Created by Trofim Petyanov on 31.01.2023.
+  
+*/
+
+"Newly Added" = "Новинки";
+"Most Popular" = "Самые Популярные";
+"Locals Choice" = "Выбор Местных";
+
+"Dietary Restrictions" = "Пищевые ограничения";
+"Cuisine" = "Кухня";
+"Price" = "Цена";
+
